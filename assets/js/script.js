@@ -22,17 +22,17 @@ class Control {
         if (this.textData.value === "") {
             this.textModel.textContent = this.originalText;
         } else {
-            this.textModel.textContent = textData.value;
+            this.textModel.textContent = this.textData.value;
         }
     }
 
     changeColor(){
-        textModel.style.color = `${this.color.value}`
+        this.textModel.style.color = `${this.color.value}`
 
         if(this.color.value == "#ffffff"){
-            textModel.style.backgroundColor = "#000000";
+            this.textModel.style.backgroundColor = "#000000";
         } else{
-            textModel.style.backgroundColor = "#ffffff";
+            this.textModel.style.backgroundColor = "#ffffff";
         }
     }
 }
